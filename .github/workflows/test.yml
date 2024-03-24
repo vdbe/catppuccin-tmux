@@ -32,6 +32,7 @@ jobs:
         run: |
           bash --version
           tmux -V
+          export SOCKET_NAME="default"
           ./.github/scripts/test.bash ./catppuccin.tmux
 
   old-bash:
