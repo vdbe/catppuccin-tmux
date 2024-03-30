@@ -20,7 +20,7 @@ main() {
   local tmux_commands=()
 
   # module directories
-  local custom_path modules_custom_path modules_status_path modules_window_path modules_pane_path
+  local custom_path modules_custom_path modules_status_path modules_window_path modules_pane_path not_used
   custom_path="$(get_tmux_option "@catppuccin_custom_plugin_dir" "${PLUGIN_DIR}/custom")"
   modules_custom_path=$custom_path
   modules_status_path=$PLUGIN_DIR/status

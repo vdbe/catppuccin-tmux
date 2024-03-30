@@ -1,7 +1,7 @@
 #!/bin/sh
 
 get_tmux_option() {
-  local option value default
+  local option value default not_used
   option="$1"
   default="$2"
   value=$(tmux show-option -gqv "$option")

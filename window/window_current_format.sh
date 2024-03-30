@@ -1,5 +1,5 @@
 show_window_current_format() {
-  local number color background text fill current_window_format
+  local number color background text fill current_window_format not_used
 
   number="#I"
   color=$(get_tmux_option "@catppuccin_window_current_color" "$thm_orange")

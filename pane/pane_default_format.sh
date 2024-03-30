@@ -1,5 +1,5 @@
 show_pane_default_format() {
-  local number color background text fill
+  local number color background text fill not_used
 
   number="#{pane_index}"
   color="$(get_tmux_option "@catppuccin_pane_color" "$thm_green")"

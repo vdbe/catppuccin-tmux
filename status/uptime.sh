@@ -1,5 +1,5 @@
 show_uptime() {
-  local index icon color text module
+  local index icon color text module not_used
 
   index=$1
   icon="$(get_tmux_option "@catppuccin_uptime_icon" "󰔟")"

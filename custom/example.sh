@@ -2,15 +2,14 @@
 # E.g.: Requires https://github.com/aaronpowell/tmux-weather
 
 show_test() { # This function name must match the module name!
-  local index icon color text module
+  local index icon color text module not_used
 
   index=$1 # This variable is used internally by the module loader in order to know the position of this module
-  icon="$(  get_tmux_option "@catppuccin_test_icon"  ""           )"
-  color="$( get_tmux_option "@catppuccin_test_color" "$thm_orange" )"
-  text="$(  get_tmux_option "@catppuccin_test_text"  "hello world" )"
+  icon="$(get_tmux_option "@catppuccin_test_icon" "")"
+  color="$(get_tmux_option "@catppuccin_test_color" "$thm_orange")"
+  text="$(get_tmux_option "@catppuccin_test_text" "hello world")"
 
-  module=$( build_status_module "$index" "$icon" "$color" "$text" )
+  module=$(build_status_module "$index" "$icon" "$color" "$text")
 
   echo "$module"
 }
-
