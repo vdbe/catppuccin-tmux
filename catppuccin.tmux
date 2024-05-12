@@ -49,10 +49,8 @@ main() {
     eval "local $key"="$val"
 
     # TODO: Find a better way to strip the quotes from `$val`
-    temp="${val%\"}"
-    temp="${temp#\"}"
     color_interpolation+=("\#{$key}")
-    color_values+=("${temp}")
+    color_values+=("${val:1:-1}")
   done <"${PLUGIN_DIR}/themes/catppuccin_${theme}.tmuxtheme"
 
   # status general
