@@ -33,7 +33,6 @@ main() {
   local theme
   local color_interpolation=()
   local color_values=()
-  local temp
   theme="$(get_tmux_option "@catppuccin_flavour" "mocha")"
   # NOTE: Pulling in the selected theme by the theme that's being set as local
   # variables.
