@@ -7,7 +7,7 @@ show_date_time() {
 
   set_tmux_batch_option_default "@catppuccin_date_time_icon" "󰃰"
   set_tmux_batch_option_default "@catppuccin_date_time_color" "$thm_blue"
-  set_tmux_batch_option_default "@catppuccin_date_time_text" "#%Y-%m-%d %H:%M"
+  set_tmux_batch_option_default "@catppuccin_date_time_text" "%Y-%m-%d %H:%M"
 
   run_tmux_batch_commands
 
