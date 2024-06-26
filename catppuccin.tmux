@@ -102,6 +102,11 @@ main() {
   set_tmux_batch_option_default "@catppuccin_window_default_background" "$thm_gray"
   set_tmux_batch_option_default "@catppuccin_window_default_text" "#{b:pane_current_path}"
   set_tmux_batch_option_default "@catppuccin_window_default_fill" "number"
+  # ./window/window_current_format.sh
+  set_tmux_batch_option_default "@catppuccin_window_current_color" "$thm_orange"
+  set_tmux_batch_option_default "@catppuccin_window_current_background" "$thm_bg"
+  set_tmux_batch_option_default "@catppuccin_window_current_text" "#{b:pane_current_path}"
+  set_tmux_batch_option_default "@catppuccin_window_current_fill" "number"
 
   run_tmux_batch_commands
 
