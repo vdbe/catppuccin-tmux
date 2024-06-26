@@ -91,6 +91,13 @@ main() {
   set_tmux_batch_option_default "@catppuccin_pane_active_border_style" \
     "#{?pane_in_mode,fg=${thm_yellow},#{?pane_synchronized,fg=${thm_magenta},fg=${thm_orange}}}"
 
+  # Set default batch options for _always_ used in _always_ ran modules
+  # ./pane/pane_default_format.sh
+  set_tmux_batch_option_default "@catppuccin_pane_color" "$thm_green"
+  set_tmux_batch_option_default "@catppuccin_pane_background_color" "$thm_gray"
+  set_tmux_batch_option_default "@catppuccin_pane_default_text" "#{b:pane_current_path}"
+  set_tmux_batch_option_default "@catppuccin_pane_default_fill" "number"
+
   run_tmux_batch_commands
 
   # status general
