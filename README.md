@@ -208,6 +208,25 @@ set -g @catppuccin_pane_border_style "fg=#{thm_gray}" # Use a value compatible w
 set -g @catppuccin_pane_active_border_style "fg=#{thm_orange}" # Use a value compatible with the standard tmux 'pane-border-active-style'
 ```
 
+### Menu
+
+#### Set the menu style:
+
+```sh
+set -g @catppuccin_menu_style "default" # Use a value compatible with the standard tmux `menu-style`
+```
+
+#### Set the menu selected style:
+
+```sh
+set -g @catppuccin_menu_selected_style "fg=#{thm_gray},bg=#{thm_yellow}" # Use a value compatible with the standard tmux `menu-selected-style`
+```
+
+### Set the menu border style:
+
+```sh
+set -g @catppuccin_menu_border_style "default" # Use a value compatible with the standard tmux `menu-border-style`
+```
 
 ### Status
 #### Set the default status bar visibility
@@ -475,6 +494,33 @@ set -g @plugin 'olimorris/tmux-pomodoro-plus'
 Add the pomodoro module to the status modules list.
 ```sh
 set -g @catppuccin_status_modules_right "... pomodoro_plus ..."
+```
+
+
+### Kube module
+
+#### Requirements
+This module depends on [kube-tmux](https://github.com/jonmosco/kube-tmux).
+
+#### Install
+The preferred way to install kube-tmux is using [TPM](https://github.com/tmux-plugins/tpm).
+
+#### Configure
+```sh
+set -g @plugin 'catppuccin/tmux'
+...
+set -g @plugin 'jonmosco/kube-tmux'
+```
+
+Add the tmux module to the status modules list.
+```sh
+set -g @catppuccin_status_modules_right "... kube ..."
+```
+
+Optionally override the kube-tmux colors
+```sh
+set -g @catppuccin_kube_context_color "#{thm_red}"
+set -g @catppuccin_kube_namespace_color "#{thm_cyan}"
 ```
 
 
