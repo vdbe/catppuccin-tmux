@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.0](https://github.com/vdbe/catppuccin-tmux/compare/v0.1.0...v0.1.0) (2024-08-04)
+
+
+### Bug Fixes
+
+* release please last-release-sha ([a7c30b2](https://github.com/vdbe/catppuccin-tmux/commit/a7c30b2c484a4c74663da69950963c844c6958e1))
+
+
+### Miscellaneous Chores
+
+* release 0.1.0 ([342af3d](https://github.com/vdbe/catppuccin-tmux/commit/342af3d5e4bf2a1ae8079a31678d17b6e37882c3))
+
 ## [0.1.0](https://github.com/catppuccin/tmux/compare/v0.0.1...v0.1.0) (2024-08-04)
 
 
